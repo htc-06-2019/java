@@ -9,7 +9,7 @@ public class TestAnnexeA1 {
 		Habitation hab = new Habitation("Jean", "METZ", 120);
 		hab.impot();
 		// affichage des attributs de la classe Habitation
-		hab.affiche();
+		hab.Affiche();
 		System.out.println();
 	
 
