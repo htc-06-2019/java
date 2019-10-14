@@ -1,10 +1,63 @@
 package fr.htc.impot.core;
 
+import fr.htc.impot.utils.Constantes;
+
 public class HabitationProfessionnelle extends Habitation {
 
-	public HabitationProfessionnelle(String nom, String adresse, double surface, String nbPiece, boolean piscine) {
-		super(nom, adresse, surface);
-		// TODO Auto-generated constructor stub
+	private int nbPiece;
+	private int nbEmployes;
+	private boolean aPiscine;
+
+	/**
+	 * 
+	 * @param propritaire
+	 * @param adresse
+	 * @param surface
+	 */
+	public HabitationProfessionnelle(String propritaire, String adresse, double surface) {
+		super(propritaire, adresse, surface);
+	}
+
+	/**
+	 * 
+	 * @param propritaire
+	 * @param adresse
+	 * @param surface
+	 * @param nbPiece
+	 * @param nbEmployes
+	 * @param aPiscine
+	 */
+
+	public HabitationProfessionnelle(String propritaire, String adresse, double surface, int nbEmployes) {
+		super(propritaire, adresse, surface);
+		this.nbEmployes = nbEmployes;
+	}
+
+	/**
+	 * print object status
+	 */
+	@Override
+	public void Affiche() {
+		super.Affiche();
+		System.out.println("Nombre d'employés = " + nbEmployes);
+	}
+
+	@Override
+	public double impot() {
+		int tranch = nbEmployes/10;
+		return super.impot() + tranch * Constantes.PRIX_PAR_EMPLOYE;
+
+	}
+
+	// ***************************** getters & setters
+
+	public int getNbEmployes() {
+		return nbEmployes;
+	}
+
+	public void setNbEmployes(int nbEmployes) {
+		this.nbEmployes = nbEmployes;
+
 	}
 
 }
