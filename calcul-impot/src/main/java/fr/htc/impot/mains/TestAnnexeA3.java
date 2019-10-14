@@ -1,14 +1,14 @@
 package fr.htc.impot.mains;
 
 import fr.htc.impot.core.Habitation;
-import fr.htc.impot.core.HabitationProfessionnelle;
+import fr.htc.impot.core.HabitationIndividuelle;
 
-public class TestAnnexeA2 {
+public class TestAnnexeA3 {
 
 	public static void main(String[] args) {
 
 		// creation d’un objet de type Habitation
-		Habitation hab = new HabitationProfessionnelle("ImportExport", "METZ", 2500, 130);
+		Habitation hab = new HabitationIndividuelle("Paul", "METZ", 120, 5, true);
 
 		// calcul de l’impôt
 		double impot = hab.impot();

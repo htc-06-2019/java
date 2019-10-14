@@ -1,8 +1,7 @@
 package fr.htc.impot.core;
 
 import static fr.htc.impot.utils.Constantes.PRIX_PAR_PIECE;
-
-import fr.htc.impot.utils.Constantes;
+import static fr.htc.impot.utils.Constantes.PRIX_PAR_PISCINE;
 
 public class HabitationIndividuelle extends Habitation {
 
@@ -44,7 +43,7 @@ public class HabitationIndividuelle extends Habitation {
 
 	@Override
 	public double impot() {
-		return super.impot() + this.nbPiece * PRIX_PAR_PIECE + (this.aPiscine ? Constantes.PRIX_PAR_PISCINE : 0);
+		return super.impot() + this.nbPiece * PRIX_PAR_PIECE + (this.aPiscine ? PRIX_PAR_PISCINE : 0);
 
 	}
 
