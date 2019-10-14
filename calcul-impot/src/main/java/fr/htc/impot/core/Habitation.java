@@ -4,19 +4,39 @@ public class Habitation {
 	private String nom;
 	private String adresse;
 	private double surface;
+
+
+
+public String getNom() {
+	return nom;
+}
+
+public String getAdresse() {
+	return adresse;
+}
+
+public double getSurface() {
+	return surface;
+}
 	
 	public Habitation(String nom, String adresse, double surface) {
-		// TODO Auto-generated constructor stub
+	super();
+	this.nom = nom;
+	this.adresse = adresse;
+	this.surface = surface;
+}
+
+	public double impot() {
+		double impotSurface = 2*surface;
+		System.out.println(impotSurface);
+		return impotSurface;
 	}
 
-	public double Impot() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 
-	public void Affiche() {
-		// TODO Auto-generated method stub
-		
+	public void affiche() {
+		System.out.println(nom);
+		System.out.println(adresse);
+		System.out.println(surface);
 	}
 
 }
