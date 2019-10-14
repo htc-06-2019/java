@@ -9,9 +9,10 @@ public class TestAnnexeA1 {
 		// creation d’un objet de type Habitation 
 		Habitation hab = new Habitation("Jean", "METZ", 120);
 		// calcul de l’imp^ot 
-		impot = hab.Impot();
+		impot = hab.impot();
 		// affichage des attributs de la classe Habitation 
 		hab.Affiche();
+		System.out.println("Impot = " + impot + "€");
 
 	}
 
