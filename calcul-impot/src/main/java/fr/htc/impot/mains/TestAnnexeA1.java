@@ -15,7 +15,7 @@ public class TestAnnexeA1 {
 		hab.Affiche();
 		
 		
-		HabitationIndividuelle hi1 = new HabitationIndividuelle("Mark", "Paris", 20, 2, true);
+		Habitation hi1 = new HabitationIndividuelle("Mark", "Paris", 20, 2, true);
 		
 		
 		
