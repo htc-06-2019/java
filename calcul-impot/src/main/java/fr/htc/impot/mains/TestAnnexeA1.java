@@ -1,17 +1,26 @@
 package fr.htc.impot.mains;
 
 import fr.htc.impot.core.Habitation;
+import fr.htc.impot.core.HabitationIndividuelle;
 
 public class TestAnnexeA1 {
 
 	public static void main(String[] args) {
 		double impot;
-		// creation d置n objet de type Habitation 
+		// creation d置n objet de type Habitation
 		Habitation hab = new Habitation("Jean", "METZ", 120);
-		// calcul de l段mp^ot 
+		// calcul de l段mp^ot
 		impot = hab.Impot();
-		// affichage des attributs de la classe Habitation 
+		// affichage des attributs de la classe Habitation
 		hab.Affiche();
+		
+		
+		HabitationIndividuelle hi1 = new HabitationIndividuelle("Mark", "Paris", 20, 2, true);
+		
+		
+		
+		
+		
 
 	}
 
