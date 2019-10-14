@@ -1,8 +1,11 @@
 package fr.htc.impot.core;
 
 public class Habitation {
-
-	public Habitation(String nom, String adresse, double suface) {
+	private String nom;
+	private String adresse;
+	private double surface;
+	
+	public Habitation(String nom, String adresse, double surface) {
 		// TODO Auto-generated constructor stub
 	}
 
