@@ -1,30 +1,68 @@
 package fr.htc.impot.core;
 
+import static fr.htc.impot.utils.Constantes.PRIX_PAR_PIECE;
+
+import fr.htc.impot.utils.Constantes;
+
 public class HabitationIndividuelle extends Habitation {
 
-	private int nbPieces;
-	private boolean piscine;
+	private int nbPiece;
+	private boolean aPiscine;
 
-	public HabitationIndividuelle(String nom, String adresse, int suface, int nbPieces, boolean aUnePiscine) {
-		super(nom, adresse, suface);
-		this.nbPieces = nbPieces;
-		this.piscine = aUnePiscine;
+	/**
+	 * 
+	 * @param propritaire
+	 * @param adresse
+	 * @param surface
+	 */
+	public HabitationIndividuelle(String propritaire, String adresse, double surface) {
+		super(propritaire, adresse, surface);
 	}
 
-	public int getNbPieces() {
-		return nbPieces;
+	/**
+	 * 
+	 * @param propritaire
+	 * @param adresse
+	 * @param surface
+	 * @param nbPiece
+	 * @param aPiscine
+	 */
+	public HabitationIndividuelle(String propritaire, String adresse, double surface, int nbPiece, boolean aPiscine) {
+		super(propritaire, adresse, surface);
+		this.nbPiece = nbPiece;
+		this.aPiscine = aPiscine;
 	}
 
-	public void setNbPieces(int nbPieces) {
-		this.nbPieces = nbPieces;
+	/**
+	 * print object status
+	 */
+	@Override
+	public void Affiche() {
+		super.Affiche();
+		System.out.println("Nombre de pièce = " + nbPiece + ", A une piscine : " + (aPiscine == true ? "OUI" : "NON"));
 	}
 
-	public boolean isPiscine() {
-		return piscine;
+	@Override
+	public double impot() {
+		return super.impot() + this.nbPiece * PRIX_PAR_PIECE + (this.aPiscine ? Constantes.PRIX_PAR_PISCINE : 0);
+
 	}
 
-	public void setPiscine(boolean piscine) {
-		this.piscine = piscine;
+	// ***************************** getters & setters
+	public int getNbPiece() {
+		return nbPiece;
+	}
+
+	public void setNbPiece(int nbPiece) {
+		this.nbPiece = nbPiece;
+	}
+
+	public boolean isaPiscine() {
+		return aPiscine;
+	}
+
+	public void setaPiscine(boolean aPiscine) {
+		this.aPiscine = aPiscine;
 	}
 
 }
