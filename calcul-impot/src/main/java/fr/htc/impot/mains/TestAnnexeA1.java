@@ -10,7 +10,7 @@ public class TestAnnexeA1 {
 		hab.impot();
 		// affichage des attributs de la classe Habitation
 		hab.affiche();
-		
+		System.out.println();
 	
 
 	}
