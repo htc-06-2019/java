@@ -1,0 +1,4 @@
+2019-10-15 11:51:39 ERROR TestLogger:11 - erreur
+2019-10-15 11:51:39 FATAL TestLogger:12 - fatal
+2019-10-15 11:53:40 FATAL TestLogger:12 - fatal
+2019-10-15 11:54:12 FATAL TestLogger:12 - fatal
