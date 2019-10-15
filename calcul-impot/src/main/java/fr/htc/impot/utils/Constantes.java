@@ -6,5 +6,6 @@ public interface Constantes {
 	public static final double PRIX_PAR_PIECE = 100;
 	public static final double PRIX_PAR_PISCINE = 500;
 	public static final double PRIX_PAR_EMPLOYE = 1000;
+	public static final int TRANCHE_EMPLOYE = 10;
 
 }

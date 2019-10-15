@@ -44,7 +44,7 @@ public class HabitationProfessionnelle extends Habitation {
 
 	@Override
 	public double impot() {
-		int tranch = nbEmployes/10;
+		int tranch = nbEmployes/Constantes.TRANCHE_EMPLOYE;
 		return super.impot() + tranch * Constantes.PRIX_PAR_EMPLOYE;
 
 	}
