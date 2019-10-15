@@ -1,0 +1,32 @@
+2019-10-15 11:37:11 ERROR TestAnnexeA4:31 - Division impossible de l'impot sur le revenu
+java.lang.ArithmeticException: / by zero
+	at fr.htc.impot.mains.TestAnnexeA4.main(TestAnnexeA4.java:29)
+2019-10-15 11:37:11 ERROR TestAnnexeA4:31 - Division impossible de l'impot sur le revenu
+java.lang.ArithmeticException: / by zero
+	at fr.htc.impot.mains.TestAnnexeA4.main(TestAnnexeA4.java:29)
+2019-10-15 11:37:11 ERROR TestAnnexeA4:31 - Division impossible de l'impot sur le revenu
+java.lang.ArithmeticException: / by zero
+	at fr.htc.impot.mains.TestAnnexeA4.main(TestAnnexeA4.java:29)
+2019-10-15 11:37:11 ERROR TestAnnexeA4:31 - Division impossible de l'impot sur le revenu
+java.lang.ArithmeticException: / by zero
+	at fr.htc.impot.mains.TestAnnexeA4.main(TestAnnexeA4.java:29)
+2019-10-15 11:37:11 ERROR TestAnnexeA4:31 - Division impossible de l'impot sur le revenu
+java.lang.ArithmeticException: / by zero
+	at fr.htc.impot.mains.TestAnnexeA4.main(TestAnnexeA4.java:29)
+2019-10-15 11:49:56 FATAL TestLogger:10 - FATAL MSG
+2019-10-15 11:49:56 ERROR TestLogger:11 - ERROR MSG
+2019-10-15 11:50:15 FATAL TestLogger:10 - FATAL MSG
+2019-10-15 11:50:28 FATAL TestLogger:10 - FATAL MSG
+2019-10-15 11:50:28 ERROR TestLogger:11 - ERROR MSG
+2019-10-15 11:50:36 FATAL TestLogger:10 - FATAL MSG
+2019-10-15 11:50:36 ERROR TestLogger:11 - ERROR MSG
+2019-10-15 11:50:36 WARN  TestLogger:12 - WARN MSG
+2019-10-15 11:50:45 FATAL TestLogger:10 - FATAL MSG
+2019-10-15 11:50:45 ERROR TestLogger:11 - ERROR MSG
+2019-10-15 11:50:45 WARN  TestLogger:12 - WARN MSG
+2019-10-15 11:50:45 INFO  TestLogger:13 - INFO MSG
+2019-10-15 11:50:53 FATAL TestLogger:10 - FATAL MSG
+2019-10-15 11:50:53 ERROR TestLogger:11 - ERROR MSG
+2019-10-15 11:50:53 WARN  TestLogger:12 - WARN MSG
+2019-10-15 11:50:53 INFO  TestLogger:13 - INFO MSG
+2019-10-15 11:50:53 DEBUG TestLogger:14 - DEBUG MSG
