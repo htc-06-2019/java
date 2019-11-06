@@ -1,0 +1,4 @@
+fr\htc\mr\sales\KpiRun.class
+fr\htc\mr\sales\KpiRun$Map.class
+fr\htc\mr\sales\KpiRun$Reduce.class
+fr\htc\mr\sales\Sale.class
