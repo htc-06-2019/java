@@ -15,8 +15,8 @@ public class SimpleConsumer {
     String topicName = args[0].toString();
     Properties props = new Properties();
 
-    props.put("bootstrap.servers", "localhost:6667");
-    props.put("group.id", "test");
+    props.put("bootstrap.servers", "127.0.0.1:6667");
+    props.put("group.id", "test1");
     props.put("enable.auto.commit", "true");
     props.put("auto.commit.interval.ms", "1000");
     props.put("session.timeout.ms", "30000");

@@ -23,20 +23,20 @@ public class SimpleProducer {
 		Properties props = new Properties();
 
 		// Assigner l'identifiant du serveur kafka
-		props.put("bootstrap.servers", "localhost:6667");
+		props.put("bootstrap.servers", "osboxes:2181");
 
 		// Definir un acquittement pour les requetes du producteur
-		props.put("acks", 0);
+		props.put("acks", "0");
 
 		// Si la requete echoue, le producteur peut reessayer automatiquemt
 		props.put("retries", 0);
 
 		// Specifier la taille du buffer size dans la config
-		props.put("batch.size", 10);
+		props.put("batch.size", 1);
 
 		// buffer.memory controle le montant total de memoire disponible au producteur
 		// pour le buffering
-		props.put("buffer.memory", "3355");
+		//props.put("buffer.memory", 335544);
 		
 		props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
