@@ -1,0 +1,39 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="customerService" class="fr.htc.spring.CustomerService">
+		<property name="customerDAO" ref="customerDAO" />
+	</bean>
+
+	<bean id="customerDAO" class="fr.htc.spring.CustomerDAO">
+		<property name="userList">
+			<list>
+				<ref bean="user1" />
+				<ref bean="user2" />
+				<ref bean="user3" />
+				<ref bean="user4" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="user1" class="fr.htc.data.User">
+		<property name="name" value="Djamel" />
+		<property name="id" value="100" />
+	</bean>
+	<bean id="user2" class="fr.htc.data.User">
+		<property name="name" value="Soraya" />
+		<property name="id" value="200" />
+	</bean>
+	<bean id="user3" class="fr.htc.data.User">
+		<property name="name" value="Sofiane" />
+		<property name="id" value="300" />
+	</bean>
+	<bean id="user4" class="fr.htc.data.User">
+		<property name="name" value="Audace" />
+		<property name="id" value="400" />
+	</bean>
+
+</beans>
+
